@@ -1,0 +1,72 @@
+local placeId = game.PlaceId
+
+        -- Push Simulator
+            if placeId == 13681795330 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/Pushing/main/Sim", true))()
+                wait()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Push"))()
+                wait()
+            else
+            -- Strong Muscle Simulator 2
+            if placeId == 12911986432 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0StrongMuscle"))()
+                wait()
+            else
+            -- Punch Simulator
+            if placeId == 14236123211 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/PunchChair/main/Admin", true))()
+                wait()
+            else
+            -- Anime Energy Clash Simulator
+            if placeId == 13370783664 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/AnimeClash/main/Simulator", true))()
+                wait()
+            else
+            -- Imposters
+            if placeId == 6263431107 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/Imposters/main/sus", true))()
+                wait()
+            else
+            -- Rock Mine Simulator
+            if placeId == 13036939998 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/RockMining/main/Main", true))()
+                wait()
+            else
+            -- Tug Of War Simulator
+            if placeId == 13771790330 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/TugOfWarSim/main/new", true))()
+                wait()
+            else
+            -- Shoot Wall Simulator
+            if placeId == 13028445510 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/ShootWall/main/Sim", true))()
+                wait()
+            else
+            -- Boxing Battles
+            if placeId == 13446063591 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/boxingbattle/main/farm", true))()
+                wait()
+            else
+            -- Block Race
+            if placeId == 14330959227 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0BlockRace"))()
+                wait()
+            end
+            --else
+            -- Other Game
+            --if placeId == GAMEIDHERE then
+               -- LOADSTRING HERE
+                --wait()
+            --end
+        end
+    end
+end
+end
+end
+end
+end
+end
+end
+
+-- Common script
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
