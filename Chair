@@ -14,7 +14,7 @@ local placeId = game.PlaceId
             else
             -- Punch Simulator
             if placeId == 14236123211 then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/PunchChair/main/Admin", true))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/PunchingSim/main/PunchHub", true))()
                 wait()
             else
             -- Anime Energy Clash Simulator
