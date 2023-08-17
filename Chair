@@ -52,12 +52,12 @@ local placeId = game.PlaceId
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0BlockRace"))()
                 wait()
             end
-            --else
-            -- Other Game
-            --if placeId == GAMEIDHERE then
-               -- LOADSTRING HERE
-                --wait()
-            --end
+            else
+            --Kitten Tycoon!
+            if placeId == 11159328933 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/KittyTycoon/main/Prime",true))();
+                wait()
+            end
         end
     end
 end
