@@ -19,7 +19,7 @@ local placeId = game.PlaceId
             else
             -- Anime Energy Clash Simulator
             if placeId == 13370783664 then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/AnimeClash/main/Simulator", true))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsPrimeTimeX/PrimeScripts/main/AnimeEnergyClashSim", true))()
                 wait()
             else
             -- Imposters
@@ -52,12 +52,7 @@ local placeId = game.PlaceId
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0BlockRace"))()
                 wait()
             end
-            --else
-            -- Other Game
-            --if placeId == GAMEIDHERE then
-               -- LOADSTRING HERE
-                --wait()
-            --end
+            
         end
     end
 end
