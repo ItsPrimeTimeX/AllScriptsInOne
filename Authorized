@@ -1,0 +1,176 @@
+local Authorized = Instance.new("ScreenGui")
+local Auth = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local ImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local TextLabel_4 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+Authorized.Name = "Authorized"
+Authorized.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Authorized.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Auth.Name = "Auth"
+Auth.Parent = Authorized
+Auth.AnchorPoint = Vector2.new(0.5, 0.5)
+Auth.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Auth.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Auth.BorderSizePixel = 0
+Auth.Position = UDim2.new(0.499635637, 0, 0.499131441, 0)
+Auth.Size = UDim2.new(0.422107548, 0, 0.422107518, 0)
+
+UICorner.CornerRadius = UDim.new(0, 30)
+UICorner.Parent = Auth
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(34, 34, 34)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(16, 16, 16))}
+UIGradient.Rotation = 90
+UIGradient.Parent = Auth
+
+TextLabel.Parent = Auth
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.500537276, 0, 0.501063406, 0)
+TextLabel.Size = UDim2.new(0.966489911, 0, 0.20877111, 0)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Thanks for boosting!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 85, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = TextLabel
+UIAspectRatioConstraint.AspectRatio = 8.222
+
+TextLabel_2.Parent = Auth
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.466329247, 0, 0.312936991, 0)
+TextLabel_2.Size = UDim2.new(0.900544286, 0, 0.148393691, 0)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "You are Authorized to use this!"
+TextLabel_2.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UIAspectRatioConstraint_2.Parent = TextLabel_2
+UIAspectRatioConstraint_2.AspectRatio = 11.567
+
+TextLabel_3.Parent = Auth
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.50000006, 0, 0.0998476148, 0)
+TextLabel_3.Size = UDim2.new(1.00000036, 0, 0.199830979, 0)
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "Prime Booster HUB"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 30)
+UICorner_2.Parent = TextLabel_3
+
+UIAspectRatioConstraint_3.Parent = TextLabel_3
+UIAspectRatioConstraint_3.AspectRatio = 8.887
+
+ImageLabel.Parent = Auth
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.929235995, 0, 0.8721596, 0)
+ImageLabel.Size = UDim2.new(0.222111359, 0, 0.222111359, 0)
+ImageLabel.Image = "rbxassetid://14660725346"
+ImageLabel.ScaleType = Enum.ScaleType.Fit
+
+UIAspectRatioConstraint_4.Parent = ImageLabel
+UIAspectRatioConstraint_4.AspectRatio = 1.776
+
+UIAspectRatioConstraint_5.Parent = Auth
+UIAspectRatioConstraint_5.AspectRatio = 1.776
+
+ImageLabel_2.Parent = Auth
+ImageLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.955734015, 0, 0.312299967, 0)
+ImageLabel_2.Size = UDim2.new(0.104652211, 0, 0.104652129, 0)
+ImageLabel_2.Image = "rbxassetid://14661079494"
+ImageLabel_2.ScaleType = Enum.ScaleType.Fit
+
+UIAspectRatioConstraint_6.Parent = ImageLabel_2
+UIAspectRatioConstraint_6.AspectRatio = 1.776
+
+TextLabel_4.Parent = Auth
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.390955567, 0, 0.893713892, 0)
+TextLabel_4.Size = UDim2.new(0.75134176, 0, 0.20877111, 0)
+TextLabel_4.Font = Enum.Font.FredokaOne
+TextLabel_4.Text = "Loading Script."
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UIAspectRatioConstraint_7.Parent = TextLabel_4
+UIAspectRatioConstraint_7.AspectRatio = 6.391
+
+UIAspectRatioConstraint_8.Parent = Authorized
+UIAspectRatioConstraint_8.AspectRatio = 1.776
+
+-- Scripts:
+
+local function LTRAYV_fake_script() -- TextLabel_4.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_4)
+
+	local textLabel = script.Parent -- Replace "script.Parent" with the reference to your TextLabel
+	
+	local countdownDuration = 5 -- Duration of the countdown in seconds
+	
+	-- Function to update the TextLabel text with the countdown
+	local function updateCountdown()
+		for countdown = countdownDuration, 0, -1 do
+			textLabel.Text = "Loading Script: " .. tostring(countdown) -- Update the TextLabel text with the countdown value
+	
+			-- Wait for 1 second
+			wait(1)
+		end
+	
+		textLabel.Text = "Loaded" -- Update the TextLabel text after the countdown finishes
+		script.Parent.Parent.Parent:Destroy() -- Make script.Parent.Parent invisible
+	end
+	
+	-- Start the countdown
+	updateCountdown()
+end
+coroutine.wrap(LTRAYV_fake_script)()
