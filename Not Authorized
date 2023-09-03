@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local NotAuthorized = Instance.new("ScreenGui")
 local NotAuth = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -11,10 +16,8 @@ local UICorner_2 = Instance.new("UICorner")
 local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
 local ImageLabel = Instance.new("ImageLabel")
 local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
-local TextButton = Instance.new("TextButton")
-local UIGradient_2 = Instance.new("UIGradient")
-local UICorner_3 = Instance.new("UICorner")
 local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local TextLabel_4 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
 local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
 
@@ -22,7 +25,6 @@ local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
 
 NotAuthorized.Name = "NotAuthorized"
 NotAuthorized.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-NotAuthorized.Enabled = false
 NotAuthorized.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 NotAuth.Name = "NotAuth"
@@ -111,45 +113,54 @@ ImageLabel.ScaleType = Enum.ScaleType.Fit
 UIAspectRatioConstraint_4.Parent = ImageLabel
 UIAspectRatioConstraint_4.AspectRatio = 1.776
 
-TextButton.Parent = NotAuth
-TextButton.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.992387235, 0, 0.0283808596, 0)
-TextButton.Size = UDim2.new(0.0939685404, 0, 0.153414652, 0)
-TextButton.Font = Enum.Font.FredokaOne
-TextButton.Text = "X"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
+UIAspectRatioConstraint_5.Parent = NotAuth
+UIAspectRatioConstraint_5.AspectRatio = 1.776
 
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(194, 0, 0))}
-UIGradient_2.Rotation = 90
-UIGradient_2.Parent = TextButton
+TextLabel_4.Parent = NotAuth
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.501849711, 0, 1.08246493, 0)
+TextLabel_4.Size = UDim2.new(0.97312963, 0, 0.270398021, 0)
+TextLabel_4.Font = Enum.Font.FredokaOne
+TextLabel_4.Text = "Closing & Alerting Owner in:"
+TextLabel_4.TextColor3 = Color3.fromRGB(85, 170, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextStrokeTransparency = 0.000
+TextLabel_4.TextWrapped = true
 
-UICorner_3.CornerRadius = UDim.new(0, 20)
-UICorner_3.Parent = TextButton
-
-UIAspectRatioConstraint_5.Parent = TextButton
-UIAspectRatioConstraint_5.AspectRatio = 1.088
-
-UIAspectRatioConstraint_6.Parent = NotAuth
-UIAspectRatioConstraint_6.AspectRatio = 1.776
+UIAspectRatioConstraint_6.Parent = TextLabel_4
+UIAspectRatioConstraint_6.AspectRatio = 6.391
 
 UIAspectRatioConstraint_7.Parent = NotAuthorized
 UIAspectRatioConstraint_7.AspectRatio = 1.776
 
 -- Scripts:
 
-local function BKKTP_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
+local function QJPNSP_fake_script() -- TextLabel_4.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_4)
 
-	local Menu = script.Parent.Parent.Parent
+	local textLabel = script.Parent -- Replace "script.Parent" with the reference to your TextLabel
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		Menu:Destroy()
-	end)
+	local countdownDuration = 10 -- Duration of the countdown in seconds
+	
+	-- Function to update the TextLabel text with the countdown
+	local function updateCountdown()
+		for countdown = countdownDuration, 0, -1 do
+			textLabel.Text = "Closing & Alerting Owner in: " .. tostring(countdown) -- Update the TextLabel text with the countdown value
+	
+			-- Wait for 1 second
+			wait(1)
+		end
+	
+		textLabel.Text = "Alerted!" -- Update the TextLabel text after the countdown finishes
+		script.Parent.Parent.Parent:Destroy() -- Make script.Parent.Parent invisible
+	end
+	
+	-- Start the countdown
+	updateCountdown()
 end
-coroutine.wrap(BKKTP_fake_script)()
+coroutine.wrap(QJPNSP_fake_script)()
