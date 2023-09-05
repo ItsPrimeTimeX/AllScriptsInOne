@@ -3,145 +3,61 @@
 
 -- Instances:
 
-local NotAuthorized = Instance.new("ScreenGui")
-local NotAuth = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local UIGradient = Instance.new("UIGradient")
+local UnAuthorized = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local TextLabel_2 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-local TextLabel_3 = Instance.new("TextLabel")
-local UICorner_2 = Instance.new("UICorner")
 local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
-local ImageLabel = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
-local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
-local TextLabel_4 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
-local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
 
-NotAuthorized.Name = "NotAuthorized"
-NotAuthorized.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-NotAuthorized.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+UnAuthorized.Name = "UnAuthorized"
+UnAuthorized.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UnAuthorized.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-NotAuth.Name = "NotAuth"
-NotAuth.Parent = NotAuthorized
-NotAuth.AnchorPoint = Vector2.new(0.5, 0.5)
-NotAuth.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NotAuth.BorderColor3 = Color3.fromRGB(0, 0, 0)
-NotAuth.BorderSizePixel = 0
-NotAuth.Position = UDim2.new(0.499635637, 0, 0.499131441, 0)
-NotAuth.Size = UDim2.new(0.422107548, 0, 0.422107518, 0)
-
-UICorner.CornerRadius = UDim.new(0, 30)
-UICorner.Parent = NotAuth
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(34, 34, 34)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(16, 16, 16))}
-UIGradient.Rotation = 90
-UIGradient.Parent = NotAuth
-
-TextLabel.Parent = NotAuth
-TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.499302119, 0, 0.684462607, 0)
-TextLabel.Size = UDim2.new(0.96649003, 0, 0.597505093, 0)
-TextLabel.Font = Enum.Font.FredokaOne
-TextLabel.Text = "Boost the discord server for access. If you already have, contact me there @itzprimetime"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-UIAspectRatioConstraint.Parent = TextLabel
-UIAspectRatioConstraint.AspectRatio = 2.873
-
-TextLabel_2.Parent = NotAuth
-TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.499302119, 0, 0.312936991, 0)
-TextLabel_2.Size = UDim2.new(0.96649003, 0, 0.148393691, 0)
-TextLabel_2.Font = Enum.Font.FredokaOne
-TextLabel_2.Text = "You are not authorized to use this!"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
-UIAspectRatioConstraint_2.Parent = TextLabel_2
-UIAspectRatioConstraint_2.AspectRatio = 11.567
-
-TextLabel_3.Parent = NotAuth
-TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.50000006, 0, 0.0998476148, 0)
-TextLabel_3.Size = UDim2.new(1.00000036, 0, 0.199830979, 0)
-TextLabel_3.Font = Enum.Font.FredokaOne
-TextLabel_3.Text = "Prime Booster HUB"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
-
-UICorner_2.CornerRadius = UDim.new(0, 30)
-UICorner_2.Parent = TextLabel_3
-
-UIAspectRatioConstraint_3.Parent = TextLabel_3
-UIAspectRatioConstraint_3.AspectRatio = 8.887
-
-ImageLabel.Parent = NotAuth
+ImageLabel.Parent = UnAuthorized
 ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.929235995, 0, 0.8721596, 0)
-ImageLabel.Size = UDim2.new(0.222111359, 0, 0.222111359, 0)
-ImageLabel.Image = "rbxassetid://14660725346"
+ImageLabel.Position = UDim2.new(0.499965459, 0, 0.499954402, 0)
+ImageLabel.Size = UDim2.new(0.54268384, 0, 0.54268378, 0)
+ImageLabel.ZIndex = 98
+ImageLabel.Image = "rbxassetid://14693339432"
 ImageLabel.ScaleType = Enum.ScaleType.Fit
 
-UIAspectRatioConstraint_4.Parent = ImageLabel
-UIAspectRatioConstraint_4.AspectRatio = 1.776
+TextLabel.Parent = ImageLabel
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.499495059, 0, 0.931239843, 0)
+TextLabel.Size = UDim2.new(0.572006106, 0, 0.135729581, 0)
+TextLabel.ZIndex = 99
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "3"
+TextLabel.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
 
-UIAspectRatioConstraint_5.Parent = NotAuth
-UIAspectRatioConstraint_5.AspectRatio = 1.776
+UIAspectRatioConstraint.Parent = TextLabel
+UIAspectRatioConstraint.AspectRatio = 7.484
 
-TextLabel_4.Parent = NotAuth
-TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.501849711, 0, 1.08246493, 0)
-TextLabel_4.Size = UDim2.new(0.97312963, 0, 0.270398021, 0)
-TextLabel_4.Font = Enum.Font.FredokaOne
-TextLabel_4.Text = "Closing & Alerting Owner in:"
-TextLabel_4.TextColor3 = Color3.fromRGB(85, 170, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextStrokeTransparency = 0.000
-TextLabel_4.TextWrapped = true
+UIAspectRatioConstraint_2.Parent = ImageLabel
+UIAspectRatioConstraint_2.AspectRatio = 1.776
 
-UIAspectRatioConstraint_6.Parent = TextLabel_4
-UIAspectRatioConstraint_6.AspectRatio = 6.391
-
-UIAspectRatioConstraint_7.Parent = NotAuthorized
-UIAspectRatioConstraint_7.AspectRatio = 1.776
+UIAspectRatioConstraint_3.Parent = UnAuthorized
+UIAspectRatioConstraint_3.AspectRatio = 1.776
 
 -- Scripts:
 
-local function QJPNSP_fake_script() -- TextLabel_4.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_4)
+local function JPTLJ_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
 
 	local textLabel = script.Parent -- Replace "script.Parent" with the reference to your TextLabel
 	
@@ -150,17 +66,44 @@ local function QJPNSP_fake_script() -- TextLabel_4.LocalScript
 	-- Function to update the TextLabel text with the countdown
 	local function updateCountdown()
 		for countdown = countdownDuration, 0, -1 do
-			textLabel.Text = "Closing & Alerting Owner in: " .. tostring(countdown) -- Update the TextLabel text with the countdown value
+			textLabel.Text =  "Sending Your Info To Owner: " .. tostring(countdown) -- Update the TextLabel text with the countdown value
 	
 			-- Wait for 1 second
 			wait(1)
 		end
 	
-		textLabel.Text = "Alerted!" -- Update the TextLabel text after the countdown finishes
+		textLabel.Text = "Sent" -- Update the TextLabel text after the countdown finishes
 		script.Parent.Parent.Parent:Destroy() -- Make script.Parent.Parent invisible
 	end
 	
 	-- Start the countdown
 	updateCountdown()
 end
-coroutine.wrap(QJPNSP_fake_script)()
+coroutine.wrap(JPTLJ_fake_script)()
+local function VYMG_fake_script() -- UnAuthorized.LocalScript 
+	local script = Instance.new('LocalScript', UnAuthorized)
+
+	-- Insert the audio ID here
+	local audioId = "136075117"
+	
+	-- Create a function to play the audio
+	local function playAudio()
+		-- Load the audio
+		local audio = Instance.new("Sound")
+		audio.SoundId = "rbxassetid://" .. audioId
+	
+		-- Set the audio properties
+		audio.Volume = 1
+		audio.Looped = false
+	
+		-- Parent the audio to the workspace
+		audio.Parent = workspace
+	
+		-- Play the audio
+		audio:Play()
+	end
+	
+	-- Call the playAudio function to start playing the audio
+	playAudio()
+end
+coroutine.wrap(VYMG_fake_script)()
