@@ -3,30 +3,30 @@
 
 -- Instances:
 
-local UnAuthorizedV2 = Instance.new("ScreenGui")
+local UnAuthorized = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-local UICorner = Instance.new("UICorner")
 local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
 
-UnAuthorizedV2.Name = "UnAuthorizedV2"
-UnAuthorizedV2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-UnAuthorizedV2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+UnAuthorized.Name = "UnAuthorized"
+UnAuthorized.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UnAuthorized.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-ImageLabel.Parent = UnAuthorizedV2
+ImageLabel.Parent = UnAuthorized
 ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.499965429, 0, 0.513149977, 0)
-ImageLabel.Size = UDim2.new(0.439999998, 0, 0.411852777, 0)
+ImageLabel.Position = UDim2.new(0.499965429, 0, 0.499954402, 0)
+ImageLabel.Size = UDim2.new(0.43900001, 0, 0.43900001, 0)
 ImageLabel.ZIndex = 98
-ImageLabel.Image = "rbxassetid://14700649560"
+ImageLabel.Image = "rbxassetid://14693339432"
+ImageLabel.ScaleType = Enum.ScaleType.Fit
 
 TextLabel.Parent = ImageLabel
 TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -34,7 +34,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.499495119, 0, 1.09065008, 0)
+TextLabel.Position = UDim2.new(0.499495059, 0, 0.931239843, 0)
 TextLabel.Size = UDim2.new(0.572006106, 0, 0.135729581, 0)
 TextLabel.ZIndex = 99
 TextLabel.Font = Enum.Font.FredokaOne
@@ -49,17 +49,14 @@ UIAspectRatioConstraint.Parent = TextLabel
 UIAspectRatioConstraint.AspectRatio = 7.484
 
 UIAspectRatioConstraint_2.Parent = ImageLabel
-UIAspectRatioConstraint_2.AspectRatio = 1.897
+UIAspectRatioConstraint_2.AspectRatio = 1.776
 
-UICorner.CornerRadius = UDim.new(0, 25)
-UICorner.Parent = ImageLabel
-
-UIAspectRatioConstraint_3.Parent = UnAuthorizedV2
+UIAspectRatioConstraint_3.Parent = UnAuthorized
 UIAspectRatioConstraint_3.AspectRatio = 1.776
 
 -- Scripts:
 
-local function NZAGDNX_fake_script() -- TextLabel.LocalScript 
+local function VQGHVCC_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local textLabel = script.Parent -- Replace "script.Parent" with the reference to your TextLabel
@@ -82,9 +79,9 @@ local function NZAGDNX_fake_script() -- TextLabel.LocalScript
 	-- Start the countdown
 	updateCountdown()
 end
-coroutine.wrap(NZAGDNX_fake_script)()
-local function IDSUQVS_fake_script() -- UnAuthorizedV2.LocalScript 
-	local script = Instance.new('LocalScript', UnAuthorizedV2)
+coroutine.wrap(VQGHVCC_fake_script)()
+local function FRSKJZ_fake_script() -- UnAuthorized.LocalScript 
+	local script = Instance.new('LocalScript', UnAuthorized)
 
 	-- Insert the audio ID here
 	local audioId = "136075117"
@@ -109,4 +106,4 @@ local function IDSUQVS_fake_script() -- UnAuthorizedV2.LocalScript
 	-- Call the playAudio function to start playing the audio
 	playAudio()
 end
-coroutine.wrap(IDSUQVS_fake_script)()
+coroutine.wrap(FRSKJZ_fake_script)()
